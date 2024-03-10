@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let hamBox = document.getElementById('hamBox');
     const menuLinks = document.querySelectorAll('.menu-link');
     let navOverlay = document.getElementById('nav-overlay');
+    let lastClickTime = 0;
 
     menuToggle.addEventListener('click', function() {
         navOpen = !navOpen;
