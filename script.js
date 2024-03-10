@@ -7,6 +7,13 @@ document.addEventListener('DOMContentLoaded', function() {
     let lastClickTime = 0;
 
     menuToggle.addEventListener('click', function() {
+        const currentTime = new Date().getTime()
+        const timeSinceLastClicked = currentTime - lastClickTime;
+        if (timeSinceLastClicked <= 500) {
+            return;
+        }
+
+        lastClickTime = currentTime
         navOpen = !navOpen;
         toggleNavVisibility(navOpen);
     });
