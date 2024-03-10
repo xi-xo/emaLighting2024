@@ -1,12 +1,17 @@
+/* Apply box-sizing to all elements for consistent box model */
 * {
     box-sizing: border-box;
 }
 
+
+/* Navigation container styles */
 .nav {
     position: fixed;
     z-index: 2;
 }
 
+
+/* Navigation bar styles */
 .navbar {
     position: fixed;
     top: 0;
@@ -19,6 +24,8 @@
     z-index: 2;
 }
 
+
+/* Navigation overlay styles */
 .nav-overlay {
     position: fixed;
     background: #f1e0c9;
@@ -35,6 +42,8 @@
     transition:  all 1.5s cubic-bezier(0,0,0,.01);/* Add the missing cubic-bezier values */
 }
 
+
+/* Logo styles */
 .logo {
     background-color: #050116;
     border-radius: 3px;
@@ -49,6 +58,8 @@
     text-transform: uppercase;
 }
 
+
+/* Menu toggle button styles */
 .menu-toggle {
     cursor: pointer;
     justify-content: center;
@@ -57,6 +68,8 @@
     
 }
 
+
+/* Container for menu links */
 .menu-links-container {
     position: absolute;
     top: 2em;
@@ -65,6 +78,8 @@
     z-index: 1; 
 }
 
+
+/* Styles for individual menu links */
 .menu-links-container a {
     color: #656115;
     text-decoration: none;
@@ -72,12 +87,16 @@
     font-size: 24px;
 }
 
+
+/* Hidden menu link styles */
 .menu-link {
     display: none;
     text-align: center;
     padding: 1em;
 }
 
+
+/* Hamburger box styles */
 .hamBox {
     position: relative;
     width: 1px;
@@ -88,6 +107,8 @@
     padding: 2em;
 }
 
+
+/* Styles for lines in the hamburger box */
 .lineTop,
 .lineBottom,
 .lineMiddle {
@@ -104,32 +125,36 @@
     transition: all 0.4s;
 }
 
+
+/* Position of top line in hamburger box */
 .lineTop {
     top: 1.3em;
 }
-
+/* Position of middle line in hamburger box */
 .lineMiddle {
     bottom: 2.1em;
 }
-
+/* Position of bottom line in hamburger box */
 .lineBottom {
     bottom: 1.6em;
 }
 
+
+/* Animation for top line when hamburger box is open */
 .hamBoxOpen .lineTop {
     top: 2.3em;
     transform: rotate(0deg);
     background: #151313;
     transition: transform 2s ease;
 }
-
+/* Animation for middle line when hamburger box is open */
 .hamBoxOpen .lineMiddle {
     bottom: 2.35em;
     transform: rotate(125deg);
     background: #151313;
     transition: transform 2s ease;
 }
-
+/* Animation for bottom line when hamburger box is open */
 .hamBoxOpen .lineBottom {
     bottom: 2.35em;
     transform: rotate(-125deg);
