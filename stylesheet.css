@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+.nav {
+    position: fixed;
+    z-index: 2;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+    z-index: 2;
+}
+
+.nav-overlay {
+    position: fixed;
+    background: #f1e0c9;
+    z-index: -2;
+    top: -100%;
+    left: 30%;
+    width: 70%;
+    height: 40vh;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition:  all 1.5s cubic-bezier(0,0,0,.01);/* Add the missing cubic-bezier values */
+}
+
+.logo {
+    background-color: #050116;
+    border-radius: 3px;
+    width: 6em;
+    height: 3em;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    color: #f6eef4;
+    font-family: 'Montagu Slab', serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    justify-content: center;
+    display: grid;
+    columns: 1;
+    
+}
+
+.menu-links-container {
+    position: absolute;
+    top: 2em;
+    right: 3em;
+    padding: 1em;
+    z-index: 1; 
+}
+
+.menu-links-container a {
+    color: #656115;
+    text-decoration: none;
+    margin-bottom: 1em;
+    font-size: 24px;
+}
+
+.menu-link {
+    display: none;
+    text-align: center;
+    padding: 1em;
+}
+
+.hamBox {
+    position: relative;
+    width: 1px;
+    height: 1px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.4s ease;
+    padding: 2em;
+}
+
+.lineTop,
+.lineBottom,
+.lineMiddle {
+    margin: 0 auto;
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 2px;
+    border-radius: 10px;
+    background: rgba(5, 2, 44, 0.5);
+    left: 0;
+    right: 0;
+    transform: rotate(0deg);
+    transition: all 0.4s;
+}
+
+.lineTop {
+    top: 1.3em;
+}
+
+.lineMiddle {
+    bottom: 2.1em;
+}
+
+.lineBottom {
+    bottom: 1.6em;
+}
+
+.hamBoxOpen .lineTop {
+    top: 2.3em;
+    transform: rotate(0deg);
+    background: #151313;
+    transition: transform 2s ease;
+}
+
+.hamBoxOpen .lineMiddle {
+    bottom: 2.35em;
+    transform: rotate(125deg);
+    background: #151313;
+    transition: transform 2s ease;
+}
+
+.hamBoxOpen .lineBottom {
+    bottom: 2.35em;
+    transform: rotate(-125deg);
+    background: #151313;
+    transition: transform 2s ease;
+}
