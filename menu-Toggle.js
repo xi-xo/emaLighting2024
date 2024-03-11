@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const timeSinceLastClicked = currentTime - lastClickTime;
 
         // Prevent rapid double-clicks (within 500ms) to avoid unintended behavior
-        if (timeSinceLastClicked <= 500) {
+        if (timeSinceLastClicked <= 1000) {
             return;
         }
 
