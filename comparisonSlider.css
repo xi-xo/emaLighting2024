@@ -58,7 +58,7 @@ body {
     width: .5rem;
     height: 100%;
     background-color: rgb(177, 177, 220);
-    z-index: 10;
+    z-index: 0;
     left: var(--position);
     transform: translate(-50%);
     pointer-events: none;
