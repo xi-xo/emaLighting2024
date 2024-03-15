@@ -6,7 +6,7 @@ img {
 body {
     display: grid;
     place-items: center;
-    min-height: 100vh;
+    min-height: 45vh;
 }
 
 .comparison-slider-container {
@@ -16,6 +16,7 @@ body {
     overflow: hidden;
     border-radius: 1rem;
     --position: 50%;
+    border: 6px solid rgb(255, 255, 255);
 }
 
 .image-container {
@@ -76,7 +77,7 @@ body {
     left: var(--position);
     transform: translate(-50%, -50%);
     pointer-events: none;
-    z-index: 100;
+    /* z-index: 1; */
     box-shadow: 1px 1px 1px 1px hsl(0, 50%, 2%, .5);
     
 }
