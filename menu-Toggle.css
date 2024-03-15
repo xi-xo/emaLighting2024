@@ -29,7 +29,7 @@
 .nav-overlay {
     position: fixed;
     background: #f1e0c9;
-    z-index: -2;
+    z-index: 1;
     top: -100%;
     left: 30%;
     width: 70%;
@@ -78,6 +78,9 @@
     z-index: 1; 
 }
 
+.menu-item {
+    list-style-type: none;
+}
 
 /* Styles for individual menu links */
 .menu-links-container a {
