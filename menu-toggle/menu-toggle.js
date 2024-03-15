@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Get the current time to track the click timestamp
         const currentTime = new Date().getTime()// Calculate the time since the last click
         const timeSinceLastClicked = currentTime - lastClickTime;// Prevent rapid double-clicks (within 500ms) to avoid unintended behavior
-        if (timeSinceLastClicked <= 1000) {
+        if (timeSinceLastClicked <= 500) {
             return;
         }
         // Update the last click timestamp to the current time
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (navOpen) {
             setTimeout(() => {
                 toggleMenuLink(navOpen)
-            }, 1400);
+            }, 500);
         } else {
             toggleMenuLink(navOpen)
         }

@@ -1,8 +1,4 @@
 /* Apply box-sizing to all elements for consistent box model */
-* {
-    box-sizing: border-box;
-}
-
 
 /* Navigation container styles */
 .nav {
@@ -39,7 +35,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition:  all 1.5s cubic-bezier(0,0,0,.01);/* Add the missing cubic-bezier values */
+    transition:  all 0.5s cubic-bezier(0,0,0,.01);/* Add the missing cubic-bezier values */
+    opacity: 0.9;
+    border-radius: 9%;
 }
 
 
@@ -65,7 +63,9 @@
     justify-content: center;
     display: grid;
     columns: 1;
-    
+    background-color: white;
+    border-radius: 100%;
+    /* border: 4px solid red; */
 }
 
 
@@ -118,10 +118,10 @@
     margin: 0 auto;
     position: absolute;
     display: block;
-    width: 24px;
+    width: 32px;
     height: 2px;
     border-radius: 10px;
-    background: rgba(5, 2, 44, 0.5);
+    background: rgba(8, 2, 39, 0.5);
     left: 0;
     right: 0;
     transform: rotate(0deg);
@@ -145,7 +145,7 @@
 
 /* Animation for top line when hamburger box is open */
 .hamBoxOpen .lineTop {
-    top: 2.3em;
+    top: 2.5em;
     transform: rotate(0deg);
     background: #151313;
     transition: transform 2s ease;
